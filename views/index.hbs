@@ -1,8 +1,12 @@
 <h1>{{title}}</h1>
 <p>List of significant earthquakes in the last month pulled from https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson </p>
-{{#each obj.features}}
-  {{#properties}}
-  	<p>{{mag}} </p>
-  {{/properties}}
-{{/each}}
+
+	{{#each obj.features}}
+	  {{#properties}}
+	  <div id = "earthquake{{@index}}">
+	  	<p> Date: {{dateFormat time "dddd, MMMM Do YYYY, h:mm:ss a"}}  Magnitude: {{mag}} <button id = "button{{@index}}" class="seemore"> More details </button> </p>
+	  </div>
+	  {{/properties}}
+	{{/each}}
+
 
