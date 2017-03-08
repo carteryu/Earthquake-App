@@ -1,6 +1,7 @@
+#Instructions :)
+
+git clone https://github.com/carteryu/Earthquake-App
+cd to that directory
+npm install
 npm start
-
-port 3000
-
-data pulled from api
-https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson
+go to localhost:3000 in browser.
